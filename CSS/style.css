@@ -1,0 +1,27 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    background-color: rgb(16, 6, 69);
+    
+}
+
+header{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 25px;
+    outline: 2px solid crimson;
+    background-image: url(../images/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-color: rgb(45, 40, 235);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
