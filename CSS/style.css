@@ -6,7 +6,8 @@
 
 body{
     background-color: rgb(16, 6, 69);
-    
+    color: white;
+    font-family: "Livvic","seriff";    
 }
 
 header{
@@ -24,4 +25,29 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#calendar-container{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 0.3rem;
+}
+
+.card{
+    width: calc(100% / 8 - 0.5rem);
+    border: 2px dashed yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 103, 84);
+    border-radius: 25px;
+}
+h3{
+    font-size:4rem;
+    color: rgb(249, 254, 253);
 }

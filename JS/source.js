@@ -125,3 +125,5 @@ const source = [
         "url": "images/dance.gif"
     }
 ];
+
+export default source;

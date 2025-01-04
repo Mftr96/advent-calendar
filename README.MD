@@ -40,3 +40,19 @@ Creiamo il nostro **calendario dell’avvento** utilizzando HTML, CSS  e JS!
 
 - Il calendario deve essere **responsive**
 - Aggiungiamo anche un bottone per “**resettare**” la memoria della pagina e ricominciare da capo
+
+
+
+### milestone 
+
+nel renderizzare le caselle del calendario, dovrò prima creare il prototipo della casella, salvarla in una variabile javascript ed eseguire un ciclo che vada a creare in pagina le caselle.
+La variabile sarà salvata in una stringa con backtick per fare in modo di inserire codice html  e inserire i segnaposto per l'icona, il numero ed il contenuto della modale.
+Per seguire ciò ho bisogno della dimensione del container delle caselle del calendario per poter calcolare le dimensioni della cartella(una cartella dovrebbe prendere 1/8 di spazio in larghezza e 1/3 in altezza).
+Il Ciclo verrà eseguito sul conto delle caselle quindi eseguo un foreach sll'array fornito dall'esercizio salvato nel file source.js
+
+Lavori da fare per domani:
+creazione container caselle fatto
+creazione prototipo casella con segnaposti fatto
+creazione ciclo per caselle fatto
+
+inserito font 
