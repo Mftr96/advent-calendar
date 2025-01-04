@@ -3,6 +3,7 @@ import source from "./source.js";
 
 let percorsoIcona = "";
 let numeroCasella = 1;
+let id = "";
 let calendario = document.getElementById("calendar-container");
 console.log(calendario);
 
@@ -20,14 +21,15 @@ for (const [index, casella] of source.entries()) {
     let numeroCasella = index + 1;
     console.log(percorsoIcona);
     console.log(numeroCasella);
-    let card = `<div class="card">
+    if (numeroCasella === 25) {
+        id = "card25";
+    }
+    let card = `<div class="card" id="${id}">
                     <div>
                         <img src="./images/icons/${percorsoIcona}.png" alt="">
                     </div>
                     <h3>${numeroCasella}</h3>
                 </div>`;
-    calendario.innerHTML+=card;
-    if(numeroCasella===25){
-        // TODO: APPLICARE STILE PER CASELLA 25 CHE PRENDE TUTTO LO SPAZIO 
-    }
+
+    calendario.innerHTML += card;
 }

@@ -45,10 +45,11 @@ Creiamo il nostro **calendario dell’avvento** utilizzando HTML, CSS  e JS!
 
 ### milestone 
 
-nel renderizzare le caselle del calendario, dovrò prima creare il prototipo della casella, salvarla in una variabile javascript ed eseguire un ciclo che vada a creare in pagina le caselle.
-La variabile sarà salvata in una stringa con backtick per fare in modo di inserire codice html  e inserire i segnaposto per l'icona, il numero ed il contenuto della modale.
+nel renderizzare le caselle del calendario, dovrò prima creare il prototipo della casella, salvarla in una variabile javascript(dentro ad un ciclo) ed eseguire un ciclo che vada a creare in pagina le caselle.
+La variabile sarà salvata in una stringa con backtick per fare in modo di inserire codice html e inserire i segnaposto per l'icona, il numero ed il contenuto della modale.
 Per seguire ciò ho bisogno della dimensione del container delle caselle del calendario per poter calcolare le dimensioni della cartella(una cartella dovrebbe prendere 1/8 di spazio in larghezza e 1/3 in altezza).
-Il Ciclo verrà eseguito sul conto delle caselle quindi eseguo un foreach sll'array fornito dall'esercizio salvato nel file source.js
+Il Ciclo verrà eseguito sul conto delle caselle quindi eseguo un for of sull'array fornito dall'esercizio salvato nel file [source.js](./JS/source.js)
+Il for of viene dichiarato con l'indice per poter stampare in modo sequenziale il numero della casella.
 
 Lavori da fare per domani:
 creazione container caselle fatto
@@ -56,3 +57,10 @@ creazione prototipo casella con segnaposti fatto
 creazione ciclo per caselle fatto
 
 inserito font 
+
+da fare :
+cambiare stile alla casella 25 che prenda tutta la riga (dovrebbe bastare cambiare la larghezza al 100%)
+idealmente, porre condizione nel ciclo : se l'indice è uguale a 25%, aggiungere stile lunghezza (non sostituisco la larghezza della classe perchè sennò cambierebbe a tutti) fatto
+
+creare modale e creare anche event listener per modale 
+creare hover per pucciosizzarlo
