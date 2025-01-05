@@ -55,10 +55,11 @@ header {
     cursor: pointer;
 }
 
-.card:hover {
+.card:hover,.btn:hover {
     opacity: 0.5;
     transition: 0.5s;
 }
+
 
 h3 {
     font-size: 4rem;
@@ -72,7 +73,7 @@ h3 {
 /* MODAL STYLE */
 
 .modal {
-    background: #7a0bc0;
+    background: black;
     position: absolute;
     display: flex;
     align-items: center;
@@ -85,15 +86,35 @@ h3 {
     transition: all 0.3s ease-in-out;
 }
 
+.modal-card{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    background-color: pink;
+    padding: 2rem;
+    border-radius: 25px;
+}
+
 .none{
     display: none;
 }
 
-.modal.open {
-    opacity: 1;
+.modal.open  {
+    opacity: 0.8;
     height: 100%;
 }
 
 .modal.open .close {
     opacity: 1;
+}
+
+button{
+    background-color: rgb(42, 53, 240);
+    border-radius: 25px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    margin-top: 2rem;
 }

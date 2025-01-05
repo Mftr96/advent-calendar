@@ -1,5 +1,6 @@
 //importare sempre con il nome completo del file sennò non va 
 import source from "./source.js";
+console.log(source.length);
 
 let percorsoIcona = "";
 let numeroCasella = 1;
@@ -35,23 +36,24 @@ const close=document.querySelector(".close");
 
 cards.forEach((card, index) => {
     card.onclick= () => {
-        console.log(`ciao ${index + 1}`);
+        console.log(`ciao ${index+1}`);
         document.querySelector(".modal").classList.toggle("open");
+        document.querySelector(".modal-card").classList.toggle("open");
         
         //INSERIRE CODICE PER FAR APPARIRE MODALE 
-        if(source[index+1].text){
+        if(source[index].text){
             document.getElementById("modal-img").classList.add("none");
             document.getElementById("modal-p").classList.remove("none");
-            let txt=source[index+1].text;
+            let txt=source[index].text;
             console.log(txt);
             document.getElementById("modal-p").innerHTML=txt;
         }
-        if(source[index+1].url){
+        if(source[index].url){
             document.getElementById("modal-p").classList.add("none");
             document.getElementById("modal-img").classList.remove("none");
 
 
-            let path=source[index+1].url;
+            let path=source[index].url;
             console.log(path);
             document.getElementById("modal-img").src=`./${path}`;
             console.log(document.getElementById("modal-img").src);

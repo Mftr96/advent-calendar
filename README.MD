@@ -65,8 +65,8 @@ cambiare stile alla casella 25 che prenda tutta la riga (dovrebbe bastare cambia
 idealmente, porre condizione nel ciclo : se l'indice è uguale a 25%, aggiungere stile lunghezza (non sostituisco la larghezza della classe perchè sennò cambierebbe a tutti) fatto
 
 creare modale e creare anche event listener per modale fatto
-gestire altezza modale(FATTO) e riempire   
-creare hover per pucciosizzarlo
+gestire altezza modale(FATTO) e riempire   fatto
+creare hover per pucciosizzarlo fatto 
 
 - milestone 2: modale
 
@@ -89,10 +89,12 @@ Questo problema è stato risolto dando un'altezza al container del calendario e 
 come fare per riempire modale
 
 per le card ho creato una variabile dento al ciclo con segnaposto
-devo farlo anche in questo caso?
+devo farlo anche in questo caso?no 
 
 giro da fare mentale :
 
 -clicco sulla casella 
 -ogni casella ha un evento on click
 -dovrei poter passare i dati tramite quella funzione 
+
+gestire errore su casella 25 
