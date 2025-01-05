@@ -45,6 +45,8 @@ Creiamo il nostro **calendario dell’avvento** utilizzando HTML, CSS  e JS!
 
 ### milestone 
 
+- milestone 1: renderizzazione calendario 
+
 nel renderizzare le caselle del calendario, dovrò prima creare il prototipo della casella, salvarla in una variabile javascript(dentro ad un ciclo) ed eseguire un ciclo che vada a creare in pagina le caselle.
 La variabile sarà salvata in una stringa con backtick per fare in modo di inserire codice html e inserire i segnaposto per l'icona, il numero ed il contenuto della modale.
 Per seguire ciò ho bisogno della dimensione del container delle caselle del calendario per poter calcolare le dimensioni della cartella(una cartella dovrebbe prendere 1/8 di spazio in larghezza e 1/3 in altezza).
@@ -59,8 +61,38 @@ creazione ciclo per caselle fatto
 inserito font 
 
 da fare :
-cambiare stile alla casella 25 che prenda tutta la riga (dovrebbe bastare cambiare la larghezza al 100%)
+cambiare stile alla casella 25 che prenda tutta la riga (dovrebbe bastare cambiare la larghezza al 100%) fatto
 idealmente, porre condizione nel ciclo : se l'indice è uguale a 25%, aggiungere stile lunghezza (non sostituisco la larghezza della classe perchè sennò cambierebbe a tutti) fatto
 
-creare modale e creare anche event listener per modale 
+creare modale e creare anche event listener per modale fatto
+gestire altezza modale(FATTO) e riempire   
 creare hover per pucciosizzarlo
+
+- milestone 2: modale
+
+per quanto riguarda la creazione di una modale, ho scelto di realizzarla senza l'ausilio di css già fatto (bootstrap o affini)ma di gestire autonomamente la creazione e l'interazione con la modale.
+
+In sostanza, la preparazione della scjermata di modale e della sua implementazione avviene con i seguenti passaggi:
+
+1) creazione della schermata modale html e del bottone che farà apparire la modale(in questo caso il bottone sarà la card del calendario )
+
+2) la stilizzazione css con creazione di una classe che faccia prendere alla modale tutta l'altezza della pagina 
+
+3) la scrittura della funzione che al click vada ad eseguire l'apertura della modale 
+
+durante la stilizzazione ho avuto un problema nella gestione della schermata modale, ovvero che quando andavo a cliccare una casella più bassa del calendario, se scrollavo lo schermo 
+la modale rimaneva in cima alla pagina e non prendeva tutto lo schermo.
+Questo problema è stato risolto dando un'altezza al container del calendario e dando lo scroll all'overflow-y
+
+<!-- BONUS PER L'ESERCIZIO: AL CLIC DELL'IMMAGINE DI COPERTINA FAR PARTIRE UN VIDEO DI ME CHE SUONO  -->
+
+come fare per riempire modale
+
+per le card ho creato una variabile dento al ciclo con segnaposto
+devo farlo anche in questo caso?
+
+giro da fare mentale :
+
+-clicco sulla casella 
+-ogni casella ha un evento on click
+-dovrei poter passare i dati tramite quella funzione 
