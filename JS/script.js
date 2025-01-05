@@ -40,11 +40,17 @@ cards.forEach((card, index) => {
         
         //INSERIRE CODICE PER FAR APPARIRE MODALE 
         if(source[index+1].text){
+            document.getElementById("modal-img").classList.add("none");
+            document.getElementById("modal-p").classList.remove("none");
             let txt=source[index+1].text;
             console.log(txt);
             document.getElementById("modal-p").innerHTML=txt;
         }
         if(source[index+1].url){
+            document.getElementById("modal-p").classList.add("none");
+            document.getElementById("modal-img").classList.remove("none");
+
+
             let path=source[index+1].url;
             console.log(path);
             document.getElementById("modal-img").src=`./${path}`;
