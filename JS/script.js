@@ -5,8 +5,10 @@ let percorsoIcona = "";
 let numeroCasella = 1;
 let id = "";
 let calendario = document.getElementById("calendar-container");
+let resetBtn=document.getElementById("reset-button");
 //AUDIO
 let loop= document.getElementById("loop");
+let resetAudio=new Audio("jingle_piano2.mp3");
 loop.volume=0.5;
 
 for (const [index, casella] of source.entries()) {
@@ -35,6 +37,8 @@ cards.forEach((card, index) => {
     card.onclick= () => {
         loop.play();
         console.log(`ciao ${index+1}`);
+        card.classList.add("opened");
+        console.log(card);
         document.querySelector(".modal").classList.toggle("open");
         document.querySelector(".modal-card").classList.toggle("open");
         let randomIndex=Math.floor(Math.random()*25);
@@ -62,8 +66,18 @@ cards.forEach((card, index) => {
     close.onclick=()=>{
         console.log("chiusura modale");
         loop.pause();
+        loop.load();
         document.querySelector(".modal").classList.remove("open");
 
     }
 });
 
+
+resetBtn.onclick=()=>{
+    resetAudio.play();
+  console.log("bottone cliccato");
+  let openedCards=document.querySelectorAll(".opened"); 
+  openedCards.forEach(openedCard => {
+    openedCard.classList.remove("opened");
+  }); 
+}

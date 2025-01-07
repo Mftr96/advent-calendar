@@ -10,7 +10,8 @@ body {
     color: rgb(234, 230, 230);
     font-family: "Livvic", "seriff";
     height: 100vh;
-    border: 2px solid purple
+    border: 2px solid purple;
+
 }
 /* HEADER STYLE */
 
@@ -41,7 +42,7 @@ header {
     flex-grow: 1;
     gap: 0.5rem;
     overflow-y: scroll;
-    height: 400px;
+    height: 300px;
 }
 
 .card {
@@ -123,4 +124,13 @@ button {
     padding: 0.5rem;
     color: white;
     margin-top: 2rem;
+}
+/*  RESET BUTTON STYLE */
+#reset-button{
+    text-align: center;
+    margin: 0 auto;
+}
+.reset-div{
+    display: flex;
+    justify-content: center;
 }
