@@ -10,8 +10,6 @@ body {
     color: rgb(234, 230, 230);
     font-family: "Livvic", "seriff";
     height: 100vh;
-    border: 2px solid purple;
-
 }
 /* HEADER STYLE */
 
@@ -134,3 +132,22 @@ button {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+header{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 4rem;
+}
+
+#calendar-container{
+    width: 100%;
+    height: 150px;
+}
+.card{
+    width: calc(100% / 2 -1rem );
+}
+h3{
+    font-size: 2rem;
+}
+  }
