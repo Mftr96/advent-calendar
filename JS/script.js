@@ -6,11 +6,9 @@ let percorsoIcona = "";
 let numeroCasella = 1;
 let id = "";
 let calendario = document.getElementById("calendar-container");
-console.log(calendario);
-
-
-
-
+//AUDIO
+let loop= document.getElementById("loop");
+loop.volume=0.5;
 
 for (const [index, casella] of source.entries()) {
     percorsoIcona = casella.icon;
@@ -36,11 +34,11 @@ const close=document.querySelector(".close");
 
 cards.forEach((card, index) => {
     card.onclick= () => {
+        loop.play();
         console.log(`ciao ${index+1}`);
         document.querySelector(".modal").classList.toggle("open");
         document.querySelector(".modal-card").classList.toggle("open");
         
-        //INSERIRE CODICE PER FAR APPARIRE MODALE 
         if(source[index].text){
             document.getElementById("modal-img").classList.add("none");
             document.getElementById("modal-p").classList.remove("none");
@@ -61,6 +59,7 @@ cards.forEach((card, index) => {
     };
     close.onclick=()=>{
         console.log("chiusura modale");
+        loop.pause();
         document.querySelector(".modal").classList.remove("open");
 
     }

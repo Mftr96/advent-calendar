@@ -11,12 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- AXIOS -->
-    <script src="https://unpkg.com/axios@1.6.8/dist/axios.min.js"></script>
+
     <title>Advent Calendar</title>
 </head>
 
@@ -30,16 +25,18 @@
 
     </div>
     <!-- MODALE -->
-     <div class="modal">
+    <div class="modal">
+        
         <div class="modal-card">
             <img id="modal-img" src="" alt="">
             <p id="modal-p"></p>
             <div class="btn">
                 <button class="close">CHIUDI</button>
-
             </div>
         </div>
-     </div>
+        <audio id="loop" controls src="./YBL_100_Marine_Full_Drums.wav"></audio>
+    </div>
+    <!-- SCRIPT -->
     <script type="module" src="./JS/source.js"></script>
     <script type="module" src="/JS/script.js"></script>
 </body>

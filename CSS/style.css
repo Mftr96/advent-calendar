@@ -1,17 +1,18 @@
-*{
+/* GENERAL STYLE */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* GENERAL STYLE */
 body {
     background-color: rgb(16, 6, 69);
-    color: white;
+    color: rgb(234, 230, 230);
     font-family: "Livvic", "seriff";
     height: 100vh;
     border: 2px solid purple
 }
+/* HEADER STYLE */
 
 header {
     width: 1200px;
@@ -40,12 +41,12 @@ header {
     flex-grow: 1;
     gap: 0.5rem;
     overflow-y: scroll;
-    height:400px;
+    height: 400px;
 }
 
 .card {
     width: calc(100% / 8 - 0.5rem);
-    height: calc(100% / 3 -0.5rem );
+    height: calc(100% / 3 -0.5rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +56,8 @@ header {
     cursor: pointer;
 }
 
-.card:hover,.btn:hover {
+.card:hover,
+.btn:hover {
     opacity: 0.5;
     transition: 0.5s;
 }
@@ -73,9 +75,10 @@ h3 {
 /* MODAL STYLE */
 
 .modal {
-    background: black;
+    background: rgba(9, 29, 9, 0.8);
     position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     top: 0;
@@ -86,23 +89,26 @@ h3 {
     transition: all 0.3s ease-in-out;
 }
 
-.modal-card{
+.modal-card {
     width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center ;
-    background-color: pink;
+    align-items: center;
+    background-color: rgb(172, 133, 140);
     padding: 2rem;
     border-radius: 25px;
 }
 
-.none{
+.opened{
+    opacity: 0.5;
+}
+.none {
     display: none;
 }
 
-.modal.open  {
-    opacity: 0.8;
+.modal.open {
+    opacity: 1;
     height: 100%;
 }
 
@@ -110,7 +116,7 @@ h3 {
     opacity: 1;
 }
 
-button{
+button {
     background-color: rgb(42, 53, 240);
     border-radius: 25px;
     margin-top: 0.5rem;
