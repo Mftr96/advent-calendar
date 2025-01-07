@@ -1,6 +1,5 @@
 //importare sempre con il nome completo del file sennò non va 
 import source from "./source.js";
-console.log(source.length);
 
 let percorsoIcona = "";
 let numeroCasella = 1;
@@ -13,8 +12,8 @@ loop.volume=0.5;
 for (const [index, casella] of source.entries()) {
     percorsoIcona = casella.icon;
     let numeroCasella = index + 1;
-    console.log(percorsoIcona);
-    console.log(numeroCasella);
+    //console.log(percorsoIcona);
+    //console.log(numeroCasella);
     if (numeroCasella === 25) {
         id = "card25";
     }
@@ -38,20 +37,23 @@ cards.forEach((card, index) => {
         console.log(`ciao ${index+1}`);
         document.querySelector(".modal").classList.toggle("open");
         document.querySelector(".modal-card").classList.toggle("open");
+        let randomIndex=Math.floor(Math.random()*25);
+        console.log(randomIndex);
+        let randomSource= source[randomIndex];
         
-        if(source[index].text){
+        if(randomSource.text){
             document.getElementById("modal-img").classList.add("none");
             document.getElementById("modal-p").classList.remove("none");
-            let txt=source[index].text;
+            let txt=randomSource.text;
             console.log(txt);
             document.getElementById("modal-p").innerHTML=txt;
         }
-        if(source[index].url){
+        if(randomSource.url){
             document.getElementById("modal-p").classList.add("none");
             document.getElementById("modal-img").classList.remove("none");
 
 
-            let path=source[index].url;
+            let path=randomSource.url;
             console.log(path);
             document.getElementById("modal-img").src=`./${path}`;
             console.log(document.getElementById("modal-img").src);

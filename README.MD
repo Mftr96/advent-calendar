@@ -96,7 +96,14 @@ giro da fare mentale :
 gestire errore su casella 25 fatto
 
 da fare:
-il contenuto delle caselle dovrebbe essere casuale e non assegnato 
+il contenuto delle caselle dovrebbe essere casuale e non assegnato fatto
+risolto assegnando un indice casuale ad una variabile e 
+salvare modifica css e mantenerla al caricamento della pagina 
+
+
+
+
+
 per il contenuto casuale bisognerebbe salvare come variabile l'oggetto preso casualmente dall'arraye poi porre condizioni
 fare rimanere le caselle cliccate 
 
