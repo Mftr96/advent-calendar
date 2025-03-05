@@ -7,6 +7,7 @@ Questo esercizio fa parte della serie di esercizi proposti da Boolean durante il
 1. [consegna](#consegna)
 2. [considerazioni_pre-progetto](#considerazioni-pre-progetto)
 3. [milestone](#milestone)
+4. [prossimamente-sul-piccolo-schermo](#roadmap)
 
 ## Consegna 👈🏻
 
@@ -49,21 +50,6 @@ Per seguire ciò ho bisogno della dimensione del container delle caselle del cal
 Il Ciclo verrà eseguito sul conto delle caselle quindi eseguo un for of sull'array fornito dall'esercizio salvato nel file [source.js](./JS/source.js)
 Il for of viene dichiarato con l'indice per poter stampare in modo sequenziale il numero della casella.
 
-Lavori da fare per domani:
-creazione container caselle fatto
-creazione prototipo casella con segnaposti fatto
-creazione ciclo per caselle fatto
-
-inserito font 
-
-da fare :
-cambiare stile alla casella 25 che prenda tutta la riga (dovrebbe bastare cambiare la larghezza al 100%) fatto
-idealmente, porre condizione nel ciclo : se l'indice è uguale a 25%, aggiungere stile lunghezza (non sostituisco la larghezza della classe perchè sennò cambierebbe a tutti) fatto
-
-creare modale e creare anche event listener per modale fatto
-gestire altezza modale(FATTO) e riempire   fatto
-creare hover per pucciosizzarlo fatto 
-
 - milestone 2: modale
 
 per quanto riguarda la creazione di una modale, ho scelto di realizzarla senza l'ausilio di css già fatto (bootstrap o affini)ma di gestire autonomamente la creazione e l'interazione con la modale.
@@ -78,39 +64,48 @@ In sostanza, la preparazione della scjermata di modale e della sua implementazio
 
 durante la stilizzazione ho avuto un problema nella gestione della schermata modale, ovvero che quando andavo a cliccare una casella più bassa del calendario, se scrollavo lo schermo 
 la modale rimaneva in cima alla pagina e non prendeva tutto lo schermo.
-Questo problema è stato risolto dando un'altezza al container del calendario e dando lo scroll all'overflow-y
+Questo problema è stato risolto dando un'altezza al container del calendario e dando lo scroll all'overflow-y.
 
-<!-- BONUS PER L'ESERCIZIO: AL CLIC DELL'IMMAGINE DI COPERTINA FAR PARTIRE UN VIDEO DI ME CHE SUONO  -->
+- milestone 3: al clic della casella la card rimane "cliccata"
 
-come fare per riempire modale
+questo punto si risolve facilmente creando una classe .opened che aggiung el'opacità alla card e che viene aggiunta al click della casella
 
-per le card ho creato una variabile dento al ciclo con segnaposto
-devo farlo anche in questo caso?no 
 
-giro da fare mentale :
-
--clicco sulla casella 
--ogni casella ha un evento on click
--dovrei poter passare i dati tramite quella funzione 
-
-gestire errore su casella 25 fatto
-
-da fare:
-il contenuto delle caselle dovrebbe essere casuale e non assegnato fatto
-risolto assegnando un indice casuale ad una variabile e 
-salvare modifica css e mantenerla al caricamento della pagina 
+- milestone 4: al ricaricare della pagina, devono rimanere salvate le caselle cliccate
 
 
 
 
 
-per il contenuto casuale bisognerebbe salvare come variabile l'oggetto preso casualmente dall'arraye poi porre condizioni
-fare rimanere le caselle cliccate 
+- BONUS:
+responsive: per il responsive ho lavorato sulla vista da cellulare principalmente andando a lavorare sulla larghezza del calendario e dell'immagine.
 
-come faccio a far rimanere le classi cliccate?
-devo cambiare in modo permanente il css?
+bottone reset: é stato aggiunto un bottone che al click va a rimuovere la classe opened su tutte le card che ce l'hanno 
 
-scrivere intanto classe css che opacizzi la casella per differenziare dalle caselle non ancora aperte FATTO
+
+audio: mi sono permesso  di creare dei piccoli effetti sonori creati al piano da aggiungere al click di apertura e chiusura della card del calendario.
+
+
+
+## Roadmap
+🏳️: da fare 
+🔨:in corso d'opera
+☑️:fatto
+
+- struttura html ☑️
+- creazione card☑️
+- creazione modale☑️
+- scrittura funzione al click ☑️
+- refactoring(separazione funzioni in foglio js a parte)🏳️
+- event delegation 🏳️
+- fare in modo che venga aperta solo la casella del giorno del calendario che coincide con la giornata attuale🏳️
+
+
+
+
+
+
+
 
 
 

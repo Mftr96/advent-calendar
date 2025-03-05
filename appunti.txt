@@ -1,0 +1,43 @@
+Lavori da fare per domani:
+creazione container caselle fatto
+creazione prototipo casella con segnaposti fatto
+creazione ciclo per caselle fatto
+
+inserito font 
+
+da fare :
+cambiare stile alla casella 25 che prenda tutta la riga (dovrebbe bastare cambiare la larghezza al 100%) fatto
+idealmente, porre condizione nel ciclo : se l'indice è uguale a 25%, aggiungere stile lunghezza (non sostituisco la larghezza della classe perchè sennò cambierebbe a tutti) fatto
+
+creare modale e creare anche event listener per modale fatto
+gestire altezza modale(FATTO) e riempire   fatto
+creare hover per pucciosizzarlo fatto 
+
+
+come fare per riempire modale
+
+per le card ho creato una variabile dento al ciclo con segnaposto
+devo farlo anche in questo caso?no 
+
+giro da fare mentale :
+
+-clicco sulla casella 
+-ogni casella ha un evento on click
+-dovrei poter passare i dati tramite quella funzione 
+
+gestire errore su casella 25 fatto
+
+da fare:
+il contenuto delle caselle dovrebbe essere casuale e non assegnato fatto
+risolto assegnando un indice casuale ad una variabile e 
+salvare modifica css e mantenerla al caricamento della pagina 
+
+
+per il contenuto casuale bisognerebbe salvare come variabile l'oggetto preso casualmente dall'arraye poi porre condizioni
+fare rimanere le caselle cliccate 
+
+come faccio a far rimanere le classi cliccate?
+devo cambiare in modo permanente il css?
+
+scrivere intanto classe css che opacizzi la casella per differenziare dalle caselle non ancora aperte FATTO
+
